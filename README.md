@@ -1,26 +1,22 @@
-# 🔥 PyroScan — Smart Fire, Gas & Visual Monitoring System
+# 🔥 PyroScan — Smart Fire, Gas & Air Quality Monitoring System
 
 <div align="center">
 
-<img src="https://img.shields.io/badge/ESP32--CAM-Smart%20Safety%20System-red?style=for-the-badge&logo=espressif" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:ff512f,50:f09819,100:1e3c72&height=180&section=header&text=PYROSCAN&fontSize=70&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Smart%20Fire,%20Gas%20%26%20Visual%20Monitoring%20System&descAlignY=58&descSize=18" width="100%"/>
 
-<img src="https://img.shields.io/badge/IoT-Real--Time%20Monitoring-blue?style=for-the-badge" />
+<br/>
 
-<img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge" />
+<img src="https://img.shields.io/badge/ESP32--CAM-OV2640-111827?style=for-the-badge&logo=espressif&logoColor=white" />
 
-<br><br>
+<img src="https://img.shields.io/badge/IoT-Real--Time%20Monitoring-2563eb?style=for-the-badge" />
 
-# 🚨 PYROSCAN
+<img src="https://img.shields.io/badge/Status-Active-16a34a?style=for-the-badge" />
 
-### 🔥 Detect • 👁 Monitor • 📡 Alert
+<br/><br/>
 
-**An Intelligent IoT-Based Fire, Gas & Visual Monitoring System**
+### 🔥 Detect   •   👁️ Monitor   •   📡 Analyze   •   🚨 Alert
 
-<br>
-
-<img src="https://img.shields.io/badge/Powered%20By-ESP32--CAM-black?style=flat-square" />
-<img src="https://img.shields.io/badge/Cloud-Blynk%20IoT-blue?style=flat-square" />
-<img src="https://img.shields.io/badge/Camera-OV2640-orange?style=flat-square" />
+> **An intelligent IoT-based safety monitoring system combining live visual surveillance, gas detection, flame detection, PM2.5 monitoring, and real-time cloud alerts.**
 
 </div>
 
@@ -28,177 +24,175 @@
 
 ## 🌟 Project Overview
 
-> **PyroScan** integrates an **ESP32-CAM module** with gas and flame sensors to provide both **visual monitoring** and **environmental hazard detection**.
-
 <table>
 <tr>
 <td width="50%">
 
-### 📷 Visual Intelligence
+### 🧠 Intelligent Monitoring
 
-* Live video streaming
-* ESP32-CAM with OV2640
-* Wi-Fi-based monitoring
+PyroScan integrates an **ESP32-CAM** with multiple environmental and hazard detection sensors to continuously monitor the surrounding environment.
 
 </td>
 
 <td width="50%">
 
-### 🚨 Hazard Detection
+### 🚨 Real-Time Safety
 
-* MQ-135 air-quality monitoring
-* IR flame detection
-* Real-time Blynk alerts
+The system detects abnormal conditions and sends information and alerts through **Wi-Fi and Blynk IoT** for remote monitoring.
 
 </td>
 </tr>
 </table>
 
-The system streams **live video over Wi-Fi** and sends alerts to the **Blynk app** whenever abnormal gas levels or flame events are detected.
-
-<br>
+<br/>
 
 <div align="center">
 
-```text
-┌──────────────────────────────────────────────────┐
-│                    🔥 PYROSCAN                    │
-├──────────────────────────────────────────────────┤
-│                                                  │
-│   🧪 MQ-135 ─────┐                               │
-│                  │                               │
-│   🔥 Flame ──────┼──────► 🧠 ESP32-CAM          │
-│                  │              │                │
-│                  │              ├──► 📷 LIVE      │
-│                  │              │    VIDEO        │
-│                  │              │                │
-│                  │              └──► 📡 Wi-Fi     │
-│                  │                       │        │
-│                  └───────────────────────▼        │
-│                                           ☁️       │
-│                                      BLYNK CLOUD  │
-│                                           │       │
-│                                           ▼       │
-│                                      📱 ALERTS    │
-└──────────────────────────────────────────────────┘
-```
+## ⚡ System Capabilities
+
+|  📷 Visual | 🧪 Gas |  🔥 Flame |  🌫️ PM2.5  |    📡 IoT    |
+| :--------: | :----: | :-------: | :---------: | :----------: |
+| Live Video | MQ-135 | IR Sensor | Air Quality | Blynk Alerts |
 
 </div>
 
 ---
 
-# ⚡ Features
+# 🛠️ PyroScan Hardware Prototype
+
+<div align="center">
+
+<img src="./assets/PyroScan_prototype.png" alt="PyroScan Hardware Prototype" width="100%"/>
+
+<br/>
+
+<img src="https://img.shields.io/badge/📷-ESP32--CAM-blue?style=for-the-badge"/>
+
+<img src="https://img.shields.io/badge/🧪-MQ--135-success?style=for-the-badge"/>
+
+<img src="https://img.shields.io/badge/🔥-IR%20Flame%20Sensor-red?style=for-the-badge"/>
+
+<img src="https://img.shields.io/badge/🌫️-PM2.5-purple?style=for-the-badge"/>
+
+</div>
+
+<br/>
+
+The PyroScan prototype combines multiple sensors with the **ESP32-CAM** to create a compact and intelligent environmental hazard monitoring unit.
+
+---
+
+# ⚙️ Key Features
 
 <table>
 <tr>
+
 <td align="center" width="33%">
 
-### 📷 Live Streaming
+## 📷
 
-ESP32-CAM with OV2640 provides real-time video monitoring over Wi-Fi.
+### Live Video Streaming
+
+Real-time visual monitoring using the **ESP32-CAM and OV2640 camera**.
 
 </td>
 
 <td align="center" width="33%">
 
-### 🧪 Gas Detection
+## 🧪
 
-MQ-135 continuously monitors air quality and abnormal gas levels.
+### Gas Detection
+
+Continuous air and gas monitoring using the **MQ-135 sensor**.
 
 </td>
 
 <td align="center" width="33%">
 
-### 🔥 Flame Detection
+## 🔥
 
-IR flame sensor detects possible flame events in real time.
+### Flame Detection
+
+Real-time flame detection using an **IR Flame Sensor**.
 
 </td>
+
 </tr>
 
 <tr>
+
 <td align="center">
 
-### ☁️ Blynk IoT
+## 🌫️
 
-Cloud connectivity for monitoring and notifications.
+### PM2.5 Monitoring
+
+Monitoring airborne particulate matter and air quality.
 
 </td>
 
 <td align="center">
 
-### 📡 Wi-Fi Enabled
+## ☁️
 
-Wireless connectivity and remote access.
+### Blynk IoT
+
+Cloud connectivity for remote monitoring and real-time alerts.
 
 </td>
 
 <td align="center">
 
-### 🚨 Smart Alerts
+## 🚨
 
-Autonomous safety alerts using notifications, sound, LEDs, etc.
+### Smart Alerts
+
+Automatic alerts through notifications and optional local alarms.
 
 </td>
+
 </tr>
 </table>
 
 ---
 
-# 🛠 Hardware Requirements
+# 🧩 Hardware Requirements
 
-<details open>
+<div align="center">
 
-<summary><b>🧠 Main Controller</b></summary>
+| Component                        | Purpose                                  |
+| -------------------------------- | ---------------------------------------- |
+| 📷 **ESP32-CAM**                 | Main controller and live video streaming |
+| 🧪 **MQ-135**                    | Gas and air-quality monitoring           |
+| 🔥 **IR Flame Sensor**           | Flame detection                          |
+| 🌫️ **PMS5003 / PM2.5 Sensor**   | Particulate matter monitoring            |
+| 🔌 **FTDI Programmer**           | Uploading code to ESP32-CAM              |
+| ⚡ **5V Power Supply**            | Powering the system                      |
+| 🧷 **Jumper Wires**              | Hardware connections                     |
+| 🍞 **Breadboard**                | Prototype connections                    |
+| 🔊 **Buzzer / LED** *(Optional)* | Local alerts                             |
 
-<br>
-
-| Component    | Specification     |
-| ------------ | ----------------- |
-| 📷 ESP32-CAM | AI-Thinker Module |
-| 📸 Camera    | OV2640            |
-
-</details>
-
-<details>
-
-<summary><b>🔌 Programming & Power</b></summary>
-
-<br>
-
-* FTDI Programmer
-* 5V Power Supply / USB
-* Jumper Wires
-
-</details>
-
-<details>
-
-<summary><b>🧪 Sensors</b></summary>
-
-<br>
-
-* 🧪 MQ-135 Gas Sensor
-* 🔥 IR Flame Sensor Module
-
-</details>
-
-<details>
-
-<summary><b>🔊 Optional Components</b></summary>
-
-<br>
-
-* Buzzer
-* LED
-
-</details>
+</div>
 
 ---
 
-# 🔌 Wiring
+# ⚡ Circuit Diagram
 
-## 🖥 ESP32-CAM → FTDI Programmer
+<div align="center">
+
+<img src="./assets/PyroScan_circuit.png" alt="PyroScan Circuit Diagram" width="100%"/>
+
+<br/>
+
+### 🔌 Complete Wiring Architecture of PyroScan
+
+</div>
+
+---
+
+# 🔗 Wiring Connections
+
+## 📷 ESP32-CAM → FTDI Programmer
 
 <table>
 <tr>
@@ -228,11 +222,12 @@ Autonomous safety alerts using notifications, sound, LEDs, etc.
 
 <tr>
 <td><code>GPIO0</code></td>
-<td><code>GND</code> ⚠️ Only during upload</td>
+<td><code>GND</code> — Only during upload</td>
 </tr>
+
 </table>
 
-> ⚠️ **Important:** Remove the `GPIO0 → GND` connection after uploading the code.
+> ⚠️ **Important:** Remove the `GPIO0 → GND` connection after uploading the code and before normal operation.
 
 ---
 
@@ -256,8 +251,9 @@ Autonomous safety alerts using notifications, sound, LEDs, etc.
 
 <tr>
 <td>AOUT</td>
-<td>GPIO 32 <i>(adjustable)</i></td>
+<td>GPIO 32</td>
 </tr>
+
 </table>
 
 ---
@@ -282,25 +278,72 @@ Autonomous safety alerts using notifications, sound, LEDs, etc.
 
 <tr>
 <td>D0</td>
-<td>GPIO 33 <i>(adjustable)</i></td>
+<td>GPIO 33</td>
 </tr>
+
 </table>
 
 ---
 
-# ☁️ Blynk Setup
+## 🌫️ PMS5003 / PM2.5 Sensor
+
+<table>
+<tr>
+<th>PM2.5 Sensor</th>
+<th>ESP32-CAM</th>
+</tr>
+
+<tr>
+<td>VCC</td>
+<td>5V</td>
+</tr>
+
+<tr>
+<td>GND</td>
+<td>GND</td>
+</tr>
+
+<tr>
+<td>TXD</td>
+<td>U0R / Configured RX Pin</td>
+</tr>
+
+<tr>
+<td>RXD</td>
+<td>Configured TX Pin</td>
+</tr>
+
+</table>
+
+> ⚠️ Ensure that the serial pins used for the PM2.5 sensor do not conflict with programming or other required ESP32-CAM functions.
+
+---
+
+# ☁️ Blynk IoT Setup
 
 <div align="center">
 
-### 📡 Connect • Monitor • Get Alerted
+### 📡 Connect • Monitor • Analyze • Alert
 
 </div>
 
-### ① Create a Device
+<details open>
+
+<summary><b>① Create a Device</b></summary>
+
+<br/>
 
 Create a new device in **Blynk Cloud**.
 
-### ② Copy Your Credentials
+</details>
+
+<details>
+
+<summary><b>② Copy Device Credentials</b></summary>
+
+<br/>
+
+You will need:
 
 ```cpp
 BLYNK_TEMPLATE_ID
@@ -308,43 +351,67 @@ BLYNK_TEMPLATE_NAME
 BLYNK_AUTH_TOKEN
 ```
 
-### ③ Configure Dashboard Widgets
+</details>
 
-<table>
-<tr>
-<td align="center">📷<br><b>Live Video Stream</b></td>
-<td align="center">📊<br><b>Gas Gauge / Graph</b></td>
-<td align="center">🔴<br><b>Flame Alert</b></td>
-</tr>
-</table>
+<details>
 
-Add:
+<summary><b>③ Configure Dashboard Widgets</b></summary>
 
-* 📷 Live Video Stream widget using the ESP32-CAM URL
-* 📊 Gauge / Graph widgets for gas values
-* 🔴 LED / Notification widget for flame alerts
+<br/>
+
+Add widgets for:
+
+* 📷 Live Video Stream
+* 🧪 MQ-135 Gas Value
+* 🔥 Flame Detection Status
+* 🌫️ PM2.5 / Air Quality Data
+* 📊 Historical Graphs
+* 🚨 Notifications and Alerts
+
+</details>
 
 ---
 
 # 💻 Software Requirements
 
-<div align="center">
+<table>
+<tr>
+<th>Software / Library</th>
+<th>Purpose</th>
+</tr>
 
-| Tool / Library          | Usage                   |
-| ----------------------- | ----------------------- |
-| 🛠 Arduino IDE          | Programming environment |
-| 📷 `esp_camera.h`       | Camera control          |
-| 📡 `WiFi.h`             | Wi-Fi connectivity      |
-| ☁️ `BlynkSimpleEsp32.h` | Blynk IoT integration   |
+<tr>
+<td>🛠️ Arduino IDE</td>
+<td>Programming Environment</td>
+</tr>
 
-</div>
+<tr>
+<td><code>esp_camera.h</code></td>
+<td>ESP32-CAM Control</td>
+</tr>
 
-### ESP32 Board Support
+<tr>
+<td><code>WiFi.h</code></td>
+<td>Wi-Fi Connectivity</td>
+</tr>
 
-Add the following URL in Arduino IDE Board Manager settings:
+<tr>
+<td><code>BlynkSimpleEsp32.h</code></td>
+<td>Blynk IoT Integration</td>
+</tr>
+
+</table>
+
+### ESP32 Board Manager URL
 
 ```text
 https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
+```
+
+### Recommended Board
+
+```text
+AI Thinker ESP32-CAM
 ```
 
 ---
@@ -353,9 +420,9 @@ https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32
 
 <details open>
 
-<summary><b>🔹 Step 1 — Connect FTDI</b></summary>
+<summary><b>🔹 Step 1 — Connect the FTDI Programmer</b></summary>
 
-Connect the FTDI programmer to the ESP32-CAM.
+Connect the FTDI programmer to the ESP32-CAM according to the wiring table.
 
 </details>
 
@@ -375,8 +442,10 @@ GPIO0 → GND
 
 <summary><b>🔹 Step 3 — Select Board</b></summary>
 
+Select:
+
 ```text
-Board → AI Thinker ESP32-CAM
+AI Thinker ESP32-CAM
 ```
 
 </details>
@@ -385,7 +454,7 @@ Board → AI Thinker ESP32-CAM
 
 <summary><b>🔹 Step 4 — Select COM Port</b></summary>
 
-Choose the correct serial port.
+Choose the correct serial port connected to the FTDI programmer.
 
 </details>
 
@@ -393,7 +462,7 @@ Choose the correct serial port.
 
 <summary><b>🔹 Step 5 — Upload the Code</b></summary>
 
-Upload the merged project code.
+Upload the complete PyroScan code.
 
 </details>
 
@@ -401,7 +470,7 @@ Upload the merged project code.
 
 <summary><b>🔹 Step 6 — Exit Flash Mode</b></summary>
 
-Remove:
+Disconnect:
 
 ```text
 GPIO0 → GND
@@ -411,15 +480,15 @@ GPIO0 → GND
 
 <details>
 
-<summary><b>🔹 Step 7 — Reset</b></summary>
+<summary><b>🔹 Step 7 — Restart the ESP32-CAM</b></summary>
 
-Press the **RESET** button on the ESP32-CAM.
+Press the **RESET** button.
 
-<br>
+<br/>
 
 <div align="center">
 
-# 🎉 SYSTEM READY!
+# 🎉 PyroScan is Ready!
 
 </div>
 
@@ -427,89 +496,102 @@ Press the **RESET** button on the ESP32-CAM.
 
 ---
 
-# 🧠 How It Works
+# 🧠 How PyroScan Works
 
 <div align="center">
 
 ```mermaid
-flowchart TD
+flowchart LR
 
-A([🚀 System Start]) --> B[📡 Connect to Wi-Fi]
+A[🚀 System Start] --> B[📡 Connect to Wi-Fi]
 
-B --> C[📷 Start ESP32-CAM Camera Server]
+B --> C[📷 Start ESP32-CAM]
 
-C --> D[🧪 Read MQ-135 Gas Sensor]
+C --> D[📷 Live Video Streaming]
 
-D --> E{Gas Level Normal?}
+D --> E[🧪 Read MQ-135]
 
-E -- Yes --> F[🔥 Read Flame Sensor]
+E --> F[🔥 Check Flame Sensor]
 
-E -- No --> G[🚨 Send Gas Alert to Blynk]
+F --> G[🌫️ Read PM2.5 Sensor]
 
-G --> F
+G --> H{Hazard Detected?}
 
-F --> H{Flame Detected?}
+H -- No --> I[🟢 Continue Monitoring]
 
-H -- No --> I[🔄 Continue Monitoring]
+I --> E
 
-H -- Yes --> J[🔥 Trigger Flame Alert]
+H -- Yes --> J[🚨 Generate Alert]
 
-J --> I
+J --> K[☁️ Send Data to Blynk]
 
-I --> D
+K --> L[📱 Notify User / Authority]
+
+L --> E
 ```
 
 </div>
 
-### 🔄 System Operation
+---
+
+## 🔄 Monitoring Flow
 
 <table>
 <tr>
-<td width="10%" align="center">1️⃣</td>
-<td>The <b>ESP32-CAM connects to Wi-Fi</b> and starts the camera server.</td>
+
+<td align="center">📷</td>
+<td align="center">➡️</td>
+<td align="center">🧪</td>
+<td align="center">➡️</td>
+<td align="center">🔥</td>
+<td align="center">➡️</td>
+<td align="center">🌫️</td>
+<td align="center">➡️</td>
+<td align="center">☁️</td>
+<td align="center">➡️</td>
+<td align="center">🚨</td>
+
 </tr>
 
 <tr>
-<td align="center">2️⃣</td>
-<td>Sensor data is continuously read inside the <code>loop()</code>.</td>
-</tr>
 
-<tr>
-<td align="center">3️⃣</td>
-<td>The <b>MQ-135</b> provides analog air-quality values.</td>
-</tr>
+<td align="center">Live Video</td>
+<td></td>
+<td align="center">Gas Monitoring</td>
+<td></td>
+<td align="center">Flame Detection</td>
+<td></td>
+<td align="center">PM2.5 Monitoring</td>
+<td></td>
+<td align="center">Cloud</td>
+<td></td>
+<td align="center">Alerts</td>
 
-<tr>
-<td align="center">4️⃣</td>
-<td>The <b>IR Flame Sensor</b> detects flame presence.</td>
 </tr>
-
-<tr>
-<td align="center">5️⃣</td>
-<td>If abnormal gas levels or flame events are detected, data is sent to <b>Blynk</b>.</td>
-</tr>
-
-<tr>
-<td align="center">6️⃣</td>
-<td>The system triggers a notification and optional local alerts such as a buzzer or LED.</td>
-</tr>
-
-<tr>
-<td align="center">7️⃣</td>
-<td>The ESP32-CAM continues providing <b>live video monitoring</b>.</td>
-</tr>
-
 </table>
+
+---
+
+# 📊 Live Monitoring Parameters
+
+<div align="center">
+
+| Parameter     | Sensor / Source | Status        |
+| ------------- | --------------- | ------------- |
+| 📷 Live Video | ESP32-CAM       | 🟢 Active     |
+| 🧪 Gas Level  | MQ-135          | 🟢 Monitoring |
+| 🔥 Flame      | IR Flame Sensor | 🟢 Monitoring |
+| 🌫️ PM2.5     | PMS5003         | 🟢 Monitoring |
+| 📡 Network    | Wi-Fi           | 🟢 Connected  |
+| ☁️ Cloud      | Blynk IoT       | 🟢 Online     |
+
+</div>
 
 ---
 
 # 📷 Live Video Stream
 
-<div align="center">
-
-### 🌐 Access Your Camera From Any Device on the Same Network
-
-</div>
+Once the ESP32-CAM connects to Wi-Fi, access the camera stream using:
 
 ```text
 http://<ESP32-CAM-IP>/stream
@@ -525,25 +607,162 @@ with the IP address assigned to your ESP32-CAM.
 
 ---
 
+# 🏙️ Municipality Monitoring Concept
+
+PyroScan can be deployed across multiple municipal locations to create a centralized smart safety monitoring network.
+
+```mermaid
+flowchart TD
+
+A[📷 PyroScan Device 1] --> E[☁️ Cloud / Database]
+B[🔥 PyroScan Device 2] --> E
+C[🧪 PyroScan Device 3] --> E
+D[🌫️ PyroScan Device N] --> E
+
+E --> F[🏙️ Municipality Dashboard]
+
+F --> G[📊 Real-Time Monitoring]
+F --> H[🗺️ Device Locations]
+F --> I[🚨 Emergency Alerts]
+F --> J[📈 Historical Analytics]
+```
+
+The municipality dashboard can provide:
+
+* 📍 Device location monitoring
+* 📷 Live camera access
+* 🧪 Gas level visualization
+* 🔥 Flame detection alerts
+* 🌫️ Air-quality monitoring
+* 📊 Historical sensor analytics
+* 🟢 Online / Offline device tracking
+* 🚨 Critical alert management
+
+---
+
 # 🌍 Applications
 
 <table>
 <tr>
-<td align="center">🏠<br><b>Home Safety</b><br>Fire and gas leak monitoring</td>
 
-<td align="center">🏭<br><b>Industrial Safety</b><br>Hazard detection systems</td>
+<td align="center" width="33%">
 
-<td align="center">🏡<br><b>Smart Homes</b><br>IoT-based automation</td>
+## 🏠
+
+### Home Safety
+
+Fire and gas leak monitoring.
+
+</td>
+
+<td align="center" width="33%">
+
+## 🏭
+
+### Industrial Safety
+
+Continuous environmental and hazard monitoring.
+
+</td>
+
+<td align="center" width="33%">
+
+## 🏙️
+
+### Smart Cities
+
+Distributed municipal safety monitoring.
+
+</td>
+
 </tr>
 
 <tr>
-<td align="center">👁️<br><b>Surveillance</b><br>Live visual monitoring</td>
 
-<td align="center">🌍<br><b>Environment</b><br>Air-quality sensing</td>
+<td align="center">
 
-<td align="center">🚨<br><b>Early Detection</b><br>Real-time safety alerts</td>
+## 🏫
+
+### Public Infrastructure
+
+Monitoring important public buildings and areas.
+
+</td>
+
+<td align="center">
+
+## 🌍
+
+### Environmental Monitoring
+
+PM2.5 and air-quality sensing.
+
+</td>
+
+<td align="center">
+
+## 🚨
+
+### Early Hazard Detection
+
+Real-time alerts before hazards escalate.
+
+</td>
+
 </tr>
 </table>
+
+---
+
+# 🔮 Future Improvements
+
+<details>
+
+<summary><b>🤖 AI-Based Fire and Smoke Detection</b></summary>
+
+Use computer vision and machine learning to identify fire and smoke directly from the ESP32-CAM video feed.
+
+</details>
+
+<details>
+
+<summary><b>💾 Event-Based Recording</b></summary>
+
+Automatically capture images or videos when an abnormal event is detected.
+
+</details>
+
+<details>
+
+<summary><b>📍 GPS Integration</b></summary>
+
+Add location information for faster emergency response.
+
+</details>
+
+<details>
+
+<summary><b>🔊 Local Emergency Alerts</b></summary>
+
+Add sirens, buzzers, LEDs, or warning indicators.
+
+</details>
+
+<details>
+
+<summary><b>🏙️ Multi-Device Municipality Network</b></summary>
+
+Deploy multiple PyroScan units across different city locations and monitor them through a centralized command dashboard.
+
+</details>
+
+<details>
+
+<summary><b>📊 Cloud Data Analytics</b></summary>
+
+Store historical sensor data for trend analysis, prediction, and decision-making.
+
+</details>
 
 ---
 
@@ -555,74 +774,63 @@ with the IP address assigned to your ESP32-CAM.
 
 </div>
 
-> This system is designed **only for educational, research, and prototyping purposes**.
+> **PyroScan is designed for educational, research, demonstration, and prototyping purposes.**
 
-It is **not a replacement** for certified:
+This system should **not be used as a replacement for certified safety equipment**, including:
 
 * 🚒 Fire alarm systems
-* 🧪 Gas leak detectors
-* 🏭 Industrial safety equipment
-* 🚨 Emergency response infrastructure
+* 🧪 Certified gas leak detectors
+* 🏭 Industrial safety infrastructure
+* 🚨 Emergency response systems
 
-**Always use certified safety equipment in real-world critical environments.**
-
----
-
-# 🔮 Future Improvements
-
-<details>
-
-<summary><b>🔊 Local Alert System</b></summary>
-
-Add a buzzer for immediate local hazard alerts.
-
-</details>
-
-<details>
-
-<summary><b>🌡 Environmental Monitoring</b></summary>
-
-Integrate temperature and humidity sensors such as DHT22.
-
-</details>
-
-<details>
-
-<summary><b>💾 Smart Event Recording</b></summary>
-
-Add SD card recording when a hazard event is detected.
-
-</details>
-
-<details>
-
-<summary><b>🤖 AI-Based Detection</b></summary>
-
-Add machine-learning-based smoke and flame recognition.
-
-</details>
+Always use certified safety equipment in critical real-world environments.
 
 ---
 
-<br>
+# 🧰 Technologies Used
 
 <div align="center">
+
+<img src="https://img.shields.io/badge/ESP32-Embedded%20System-E7352C?style=for-the-badge&logo=espressif&logoColor=white"/>
+
+<img src="https://img.shields.io/badge/C%2B%2B-Arduino-00599C?style=for-the-badge&logo=cplusplus&logoColor=white"/>
+
+<img src="https://img.shields.io/badge/Arduino-IDE-00979D?style=for-the-badge&logo=arduino&logoColor=white"/>
+
+<img src="https://img.shields.io/badge/Blynk-IoT-23C48E?style=for-the-badge"/>
+
+<img src="https://img.shields.io/badge/Wi--Fi-IoT%20Connectivity-2563EB?style=for-the-badge"/>
+
+</div>
+
+---
+
+<br/>
+
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1e3c72,50:f09819,100:ff512f&height=120&section=footer&text=SAFER%20CITIES%20•%20SMARTER%20TOMORROW&fontSize=25&fontColor=ffffff&animation=twinkling&fontAlignY=65" width="100%"/>
 
 # 🔥 PYROSCAN
 
 ### **Smart Detection • Real-Time Monitoring • Instant Alerts**
 
-<br>
+<br/>
 
-<img src="https://img.shields.io/badge/📷-ESP32--CAM-black?style=for-the-badge" />
-<img src="https://img.shields.io/badge/🧪-MQ--135-green?style=for-the-badge" />
-<img src="https://img.shields.io/badge/🔥-Flame%20Sensor-red?style=for-the-badge" />
-<img src="https://img.shields.io/badge/☁️-Blynk%20IoT-blue?style=for-the-badge" />
+<img src="https://img.shields.io/badge/📷-LIVE%20MONITORING-2563eb?style=for-the-badge"/>
 
-<br><br>
+<img src="https://img.shields.io/badge/🚨-HAZARD%20DETECTION-dc2626?style=for-the-badge"/>
 
-### ⭐ Built with Embedded Systems, IoT, and a Passion for Safer Environments 🚀
+<img src="https://img.shields.io/badge/☁️-IOT%20CONNECTED-16a34a?style=for-the-badge"/>
+
+<br/><br/>
+
+### ⭐ Built with Embedded Systems, IoT, and a Vision for Safer Communities
 
 **If you found this project interesting, consider giving the repository a ⭐!**
+
+<br/>
+
+**🔥 Detect Early   •   📡 Monitor Anywhere   •   🚨 Respond Faster**
 
 </div>
