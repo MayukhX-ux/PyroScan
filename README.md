@@ -2,7 +2,16 @@
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:ff512f,50:f09819,100:1e3c72&height=180&section=header&text=PYROSCAN&fontSize=70&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Smart%20Fire,%20Gas%20%26%20Visual%20Monitoring%20System&descAlignY=58&descSize=18" width="100%"/>
+<h1>🔥 PYROSCAN</h1>
+
+<h3>Smart Fire, Gas & Air Quality Monitoring System</h3>
+
+<p>
+  🔥 Detect &nbsp; • &nbsp;
+  👁️ Monitor &nbsp; • &nbsp;
+  📡 Analyze &nbsp; • &nbsp;
+  🚨 Alert
+</p>
 
 <br/>
 
@@ -13,8 +22,6 @@
 <img src="https://img.shields.io/badge/Status-Active-16a34a?style=for-the-badge" />
 
 <br/><br/>
-
-### 🔥 Detect   •   👁️ Monitor   •   📡 Analyze   •   🚨 Alert
 
 > **An intelligent IoT-based safety monitoring system combining live visual surveillance, gas detection, flame detection, PM2.5 monitoring, and real-time cloud alerts.**
 
@@ -62,17 +69,17 @@ The system detects abnormal conditions and sends information and alerts through 
 
 <div align="center">
 
-<img src="./assets/PyroScan_prototype.png" alt="PyroScan Hardware Prototype" width="100%"/>
+<img src="./assets/PyroScan_prototype.png" alt="PyroScan Hardware Prototype" width="100%">
 
-<br/>
+<br/><br/>
 
-<img src="https://img.shields.io/badge/📷-ESP32--CAM-blue?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/ESP32--CAM-Live%20Video-2563eb?style=for-the-badge">
 
-<img src="https://img.shields.io/badge/🧪-MQ--135-success?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/MQ--135-Gas%20Detection-16a34a?style=for-the-badge">
 
-<img src="https://img.shields.io/badge/🔥-IR%20Flame%20Sensor-red?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/IR%20Flame-Flame%20Detection-dc2626?style=for-the-badge">
 
-<img src="https://img.shields.io/badge/🌫️-PM2.5-purple?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/PM2.5-Air%20Quality-7c3aed?style=for-the-badge">
 
 </div>
 
@@ -180,9 +187,9 @@ Automatic alerts through notifications and optional local alarms.
 
 <div align="center">
 
-<img src="./assets/PyroScan_circuit.png" alt="PyroScan Circuit Diagram" width="100%"/>
+<img src="./assets/PyroScan_circuit.png" alt="PyroScan Circuit Diagram" width="100%">
 
-<br/>
+<br/><br/>
 
 ### 🔌 Complete Wiring Architecture of PyroScan
 
@@ -534,41 +541,21 @@ L --> E
 
 ---
 
-## 🔄 Monitoring Flow
+# 🔄 Monitoring Flow
 
-<table>
-<tr>
+<div align="center">
 
-<td align="center">📷</td>
-<td align="center">➡️</td>
-<td align="center">🧪</td>
-<td align="center">➡️</td>
-<td align="center">🔥</td>
-<td align="center">➡️</td>
-<td align="center">🌫️</td>
-<td align="center">➡️</td>
-<td align="center">☁️</td>
-<td align="center">➡️</td>
-<td align="center">🚨</td>
+| Step  | Process                                   |
+| ----- | ----------------------------------------- |
+| 📷 1  | ESP32-CAM captures and streams live video |
+| 🧪 2  | MQ-135 continuously monitors gas levels   |
+| 🔥 3  | IR sensor checks for flame events         |
+| 🌫️ 4 | PMS5003 monitors particulate matter       |
+| 🧠 5  | ESP32-CAM processes sensor readings       |
+| ☁️ 6  | Data is transmitted through Wi-Fi         |
+| 📱 7  | Blynk receives data and triggers alerts   |
 
-</tr>
-
-<tr>
-
-<td align="center">Live Video</td>
-<td></td>
-<td align="center">Gas Monitoring</td>
-<td></td>
-<td align="center">Flame Detection</td>
-<td></td>
-<td align="center">PM2.5 Monitoring</td>
-<td></td>
-<td align="center">Cloud</td>
-<td></td>
-<td align="center">Alerts</td>
-
-</tr>
-</table>
+</div>
 
 ---
 
@@ -578,7 +565,7 @@ L --> E
 
 | Parameter     | Sensor / Source | Status        |
 | ------------- | --------------- | ------------- |
-| 📷 Live Video | ESP32-CAM       | 🟢 Active     |
+| 📷 Live Video | ESP32-CAM       | 🟢 Monitoring |
 | 🧪 Gas Level  | MQ-135          | 🟢 Monitoring |
 | 🔥 Flame      | IR Flame Sensor | 🟢 Monitoring |
 | 🌫️ PM2.5     | PMS5003         | 🟢 Monitoring |
@@ -805,11 +792,7 @@ Always use certified safety equipment in critical real-world environments.
 
 ---
 
-<br/>
-
 <div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1e3c72,50:f09819,100:ff512f&height=120&section=footer&text=SAFER%20CITIES%20•%20SMARTER%20TOMORROW&fontSize=25&fontColor=ffffff&animation=twinkling&fontAlignY=65" width="100%"/>
 
 # 🔥 PYROSCAN
 
@@ -817,11 +800,11 @@ Always use certified safety equipment in critical real-world environments.
 
 <br/>
 
-<img src="https://img.shields.io/badge/📷-LIVE%20MONITORING-2563eb?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/LIVE-MONITORING-2563eb?style=for-the-badge"/>
 
-<img src="https://img.shields.io/badge/🚨-HAZARD%20DETECTION-dc2626?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/HAZARD-DETECTION-dc2626?style=for-the-badge"/>
 
-<img src="https://img.shields.io/badge/☁️-IOT%20CONNECTED-16a34a?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/IOT-CONNECTED-16a34a?style=for-the-badge"/>
 
 <br/><br/>
 
@@ -831,6 +814,6 @@ Always use certified safety equipment in critical real-world environments.
 
 <br/>
 
-**🔥 Detect Early   •   📡 Monitor Anywhere   •   🚨 Respond Faster**
+### 🔥 Detect Early • 📡 Monitor Anywhere • 🚨 Respond Faster
 
 </div>
