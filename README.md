@@ -794,6 +794,11 @@ Always use certified safety equipment in critical real-world environments.
 
 <div align="center">
 
+<img 
+src="https://capsule-render.vercel.app/api?type=waving&color=0:1e3c72,50:f09819,100:ff512f&height=120&section=footer&text=SAFER%20CITIES%20%E2%80%A2%20SMARTER%20TOMORROW&fontSize=25&fontColor=ffffff&animation=twinkling&fontAlignY=65"
+width="100%"
+/>
+
 # 🔥 PYROSCAN
 
 ### **Smart Detection • Real-Time Monitoring • Instant Alerts**
