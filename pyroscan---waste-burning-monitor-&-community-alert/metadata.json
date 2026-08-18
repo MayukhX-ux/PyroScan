@@ -1,0 +1,6 @@
+{
+  "name": "PyroScan - Waste Burning Monitor & Community Alert",
+  "description": "Municipal surveillance and incident dispatch dashboard for detecting, monitoring, and penalizing illegal open waste burning, featuring real-time thermal/satellite feeds, air quality telemetry, patrol routing, and a public community reporting portal with AI verification.",
+  "requestFramePermissions": ["camera", "geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
